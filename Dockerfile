@@ -44,7 +44,7 @@ WORKDIR /app
 
 USER node
 
-COPY --chown=node:node --from=development /app /app
+COPY --chown=node:node --from=base /app /app
 
 # Run Tests
 RUN npm run lint 
@@ -62,9 +62,7 @@ FROM nginx:1.23.1-alpine AS production
 # Uncomment below to remove all nginx static assets
 # RUN rm -rf ./*
 
-RUN apk add --no-cache curl
-
-COPY --from=development /app/build /usr/share/nginx/html
+COPY --from=base /app/dist /usr/share/nginx/html
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]

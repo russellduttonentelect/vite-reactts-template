@@ -1,0 +1,33 @@
+# GIT
+.git
+
+# Documentation
+README.md
+
+# Logs
+logs
+*.log
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+dist
+
+# Typescript compiled directory
+build
+
+# Generated public files
+public/__ENV.js
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+# Docker files
+*Dockerfile*
+*docker-compose*
+.dockerignore
+
+#cypress files
+cypress
