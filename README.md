@@ -26,12 +26,12 @@ npm run dev
 - React
 - Typescript
 - ESLint
-  - ESLint Airbnb
 - Prettier
-- Husky
-- Jest
+- Vitest
 - React Testing Library
-- Tanstack React-Query
+- React Hook Form
+- Immer
+- React-Query
 - Docker
 
 This project intentionally leaves out any sort of styling packages and support, leaving that up to you.
