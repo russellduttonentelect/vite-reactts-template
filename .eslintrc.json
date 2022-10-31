@@ -4,20 +4,35 @@
     "es2021": true
   },
   "extends": [
+    "eslint:recommended",
     "plugin:react/recommended",
-    "standard-with-typescript",
+    "plugin:jsx-a11y/recommended",
     "plugin:security/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:react/jsx-runtime",
+    "plugin:prettier/recommended",
     "prettier"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "ecmaVersion": "latest",
     "sourceType": "module",
     "project": ["./tsconfig.json"]
   },
-  "plugins": ["react", "react-hooks", "security", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "security",
+    "@typescript-eslint",
+    "import",
+    "jsx-a11y",
+    "prettier"
+  ],
   "rules": {
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single", { "avoidEscape": true }],
