@@ -15,11 +15,12 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.13.5",
-    "immer": "^9.0.16",
+    "axios": "^1.2.0",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.38.0",
-    "use-immer": "^0.7.0"
+    "react-router-dom": "^6.4.3"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
