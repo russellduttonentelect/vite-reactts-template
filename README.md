@@ -30,11 +30,11 @@ npm run dev
 - Vitest
 - React Testing Library
 - React Hook Form
-- Immer
-- React-Query
+- React Router
+- React-Query (with Axios)
 - Docker
 
-This project intentionally leaves out any sort of styling packages and support, leaving that up to you.
+This project intentionally leaves out any sort of styling packages and state management libraries, as that tends to be project-dependant.
 
 ## License
 
