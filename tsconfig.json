@@ -1,5 +1,27 @@
 {
   "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "verbatimModuleSyntax": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    /* If transpiling with TypeScript: */
+    "moduleResolution": "Node",
+    "module": "es2022",
+    "outDir": "dist",
+    "sourceMap": true,
+    /* If your code runs in the DOM: */
+    "lib": ["es2022", "dom", "dom.iterable"],
+    "baseUrl": "src",
+    "jsx": "react-jsx"
+
+    /*
     "baseUrl": "src",
     "target": "ESNext",
     "useDefineForClassFields": true,
@@ -16,8 +38,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "noImplicitAny": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx" */
   },
-  "include": ["src", "public/config", "./vite.config.js"],
+  "include": ["src", "public/config"],
   "exclude": ["**/node_modules", "**/.*/"]
 }

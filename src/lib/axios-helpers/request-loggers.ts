@@ -1,4 +1,4 @@
-import { AxiosRequestConfig, AxiosResponse } from 'axios';
+import { type AxiosRequestConfig, type AxiosResponse } from 'axios';
 
 export const logRequest = (requestConfig: AxiosRequestConfig) => {
   // eslint-disable-next-line no-console

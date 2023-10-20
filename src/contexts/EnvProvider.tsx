@@ -1,7 +1,7 @@
 import { FlagsProvider } from 'flagged';
 import { validateEnv } from 'lib';
-import { createContext, PropsWithChildren, useContext } from 'react';
-import { Env } from 'types';
+import { createContext, type PropsWithChildren, useContext } from 'react';
+import type { Env } from 'types';
 
 declare global {
   interface Window {

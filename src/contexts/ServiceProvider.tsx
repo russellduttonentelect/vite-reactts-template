@@ -1,8 +1,8 @@
-import axios, { AxiosInstance } from 'axios';
+import axios, { type AxiosInstance } from 'axios';
 import { useEnvContext } from './EnvProvider';
 import { useFeature } from 'flagged';
 import { logRequest, logResponse } from 'lib';
-import { createContext, PropsWithChildren, useContext } from 'react';
+import { createContext, type PropsWithChildren, useContext } from 'react';
 
 type Services = {
   api: AxiosInstance;

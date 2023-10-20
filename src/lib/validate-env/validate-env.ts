@@ -1,4 +1,4 @@
-import { Env } from 'types';
+import { type Env } from 'types';
 
 export const validateEnv = (envConfig: Partial<Env>, defaultConfig?: Partial<Env>): Env => {
   envConfig.apiUrl ||= defaultConfig?.apiUrl;
